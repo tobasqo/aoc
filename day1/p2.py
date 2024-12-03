@@ -8,7 +8,7 @@ def load_input():
     ls = []
     rs = []
     with open(INPUT) as f:
-        for line in f.read().splitlines():
+        for line in f:
             l, r = map(int, line.split())
             ls.append(l)
             rs.append(r)
