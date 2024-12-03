@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "aoc2024"
+version = "0.1.0"
+description = ""
+authors = ["tobasqo <szymon.j.jaskowski@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.mypy]
+python_version = "3.11"
+
+[tool.ruff]
+show-fixes = true
+target-version = "py311"
+line-length = 88
+src = ["day*/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["ANN", "C4", "COM", "I", "N", "PT", "RET", "SIM", "TCH", "TID"]
+ignore = ["ANN003", "ANN101", "ANN102", "ANN201", "ANN202", "COM812", "PT023"]
+
+[tool.ruff.lint.isort]
+case-sensitive = true
