@@ -17,7 +17,10 @@ src = ["day*/*.py"]
 
 [tool.ruff.lint]
 extend-select = ["ANN", "C4", "COM", "I", "N", "PT", "RET", "SIM", "TCH", "TID"]
-ignore = ["ANN003", "ANN101", "ANN102", "ANN201", "ANN202", "COM812", "PT023"]
+ignore = ["ANN003", "ANN201", "ANN202", "E741", "COM812", "PT023"]
 
 [tool.ruff.lint.isort]
 case-sensitive = true
+
+[tool.ruff.format]
+quote-style = "double"

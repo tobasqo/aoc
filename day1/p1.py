@@ -2,7 +2,7 @@ import heapq
 
 heappop = heapq.heappop
 
-INPUT = 'day1/.input'
+INPUT = "day1/.input"
 # INPUT = 'day1/example.input'
 
 

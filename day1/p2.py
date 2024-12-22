@@ -1,6 +1,6 @@
 from collections import Counter
 
-INPUT = 'day1/.input'
+INPUT = "day1/.input"
 # INPUT = 'day1/example.input'
 
 

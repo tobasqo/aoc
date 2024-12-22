@@ -1,4 +1,4 @@
-INPUT = 'day2/.input'
+INPUT = "day2/.input"
 # INPUT = 'day2/example.input'
 
 
@@ -10,7 +10,7 @@ def load_input():
 
 def is_safely_increasing(report: tuple[int, ...]):
     for i in range(1, len(report)):
-        dif = report[i] - report[i-1]
+        dif = report[i] - report[i - 1]
         if dif <= 0 or dif > 3:
             return False
     return True
@@ -18,7 +18,7 @@ def is_safely_increasing(report: tuple[int, ...]):
 
 def is_safely_decreasing(report: tuple[int, ...]):
     for i in range(1, len(report)):
-        dif = report[i-1] - report[i]
+        dif = report[i - 1] - report[i]
         if dif <= 0 or dif > 3:
             return False
     return True
