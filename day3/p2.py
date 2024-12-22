@@ -17,11 +17,15 @@ def main():
     res = 0
     input = load_input()
     mul_enabled = True
-    for match in re.findall(MUL_PATTERN, input):
-        instruction = next(instruction for instruction in match if instruction)
-        if instruction == "do()":
+    for match in MUL_PATTERN.finditer(input):
+        instruction_name, instruction = next(
+            (instruction_name, instruction)
+            for (instruction_name, instruction) in match.groupdict().items()
+            if instruction
+        )
+        if instruction_name == "do":
             mul_enabled = True
-        elif instruction == "don't()":
+        elif instruction_name == "dont":
             mul_enabled = False
         elif mul_enabled:
             a, b = map(int, instruction[4:-1].split(","))
