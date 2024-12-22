@@ -1,5 +1,5 @@
-# INPUT = "day4/.input"
-INPUT = "day4/example2.input"
+INPUT = "day4/.input"
+# INPUT = "day4/example2.input"
 
 
 def load_input():
