@@ -1,7 +1,7 @@
 import re
 
-# INPUT = 'day3/.input'
-INPUT = 'day3/example2.input'
+INPUT = 'day3/.input'
+# INPUT = 'day3/example2.input'
 
 MUL_PATTERN = re.compile(r'(?P<mul>mul\(\d{1,3},\d{1,3}\))|(?P<do>do\(\))|(?P<dont>don\'t\(\))')
 
