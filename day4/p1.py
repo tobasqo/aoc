@@ -1,5 +1,7 @@
-# INPUT = "day4/.input"
-INPUT = "day4/example.input"
+INPUT = "day4/.input"
+
+
+# INPUT = "day4/example.input"
 
 
 def load_input():
@@ -27,17 +29,17 @@ def main():
     for row in range(m):
         for col in range(n):
             for dx, dy in gen_directions():
-                found = True
+                no_errors = True
                 for i, c in enumerate("XMAS"):
                     row_delta = row + i * dx
                     col_delta = col + i * dy
                     if not in_bounds(row_delta, m, col_delta, n):
-                        found = False
+                        no_errors = False
                         break
                     if input[row_delta][col_delta] != c:
-                        found = False
+                        no_errors = False
                         break
-                if found:
+                if no_errors:
                     res += 1
     print(res)
 
