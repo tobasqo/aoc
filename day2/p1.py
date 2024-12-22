@@ -1,6 +1,7 @@
 INPUT = 'day2/.input'
 # INPUT = 'day2/example.input'
 
+
 def load_input():
     with open(INPUT) as f:
         for line in f:

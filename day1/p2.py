@@ -23,5 +23,6 @@ def main():
         res += l * rs_cnt.get(l, 0)
     print(res)
 
+
 if __name__ == "__main__":
     main()

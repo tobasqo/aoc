@@ -28,5 +28,6 @@ def main():
         res += abs(l - r)
     print(res)
 
+
 if __name__ == "__main__":
     main()
